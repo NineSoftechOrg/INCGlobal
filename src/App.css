@@ -1,21 +1,26 @@
+
+
 /* Full Page Background Image Section */
 .App {
   font-family: 'Roboto Flex', sans-serif;
 }
 .bg-full-page {
-  background-image: url('https://imageio.forbes.com/specials-images/imageserve/64cd63cbe166a4a6d9f2b75b/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds'); /* Replace with your image URL */
+  background-image: url('https://advertisingweek.com/wp-content/uploads/2022/07/169automation.jpg'); /* Replace with your image URL */
   background-size: cover;
   background-position: center;
   min-height: 100vh; /* Full page height */
   display: flex;
-  align-items: center; /* Vertically center the content */
-  justify-content: center; /* Horizontally center */
+ /* Vertically center the content */
+  text-align: left; /* Horizontally center */
   position: relative;
   color: white;
+  flex-direction: column;
 }
 
 .caption-container {
+  text-align: left;
   position: absolute;
+  margin-bottom: 20px;
   right: 0; /* Align caption to the right */
   top: 30%;
   transform: translateY(-50%);
@@ -31,6 +36,7 @@
 #richTextContainer {
   word-break: break-word;
   box-sizing: inherit;
+  text-align: left;
   
 }
 
@@ -40,6 +46,20 @@
   background-position: right center; /* Background positioning */
   font-weight: bold;
   letter-spacing: .01em;
+  text-align: left;
+}
+/* Style the carousel images to have a fixed height */
+.carousel-container {
+  display: flex;
+  justify-content: center; /* Center the carousel */
+  width: 100%;
+  padding-top: 400px;
+}
+
+.carousel-inner img {
+  height: auto; /* Maintain aspect ratio */
+  max-height: 350px; /* Set a maximum height */
+  object-fit: cover; /* Crop image to fit */
 }
 
 /* Scrollable Cards Section */
@@ -86,3 +106,206 @@
   margin: 0; /* Remove default margin */
   text-align: center; /* Center-align the text */
 }
+
+/* Black BACKGROUND*/
+
+.black-background-section .card {
+  max-width: 400px; /* Adjust this value to reduce card width */
+  margin: 10px auto; /* Center cards with auto margin */
+}
+
+.black-background-section .card img {
+  height: auto; /* Maintain aspect ratio */
+  max-height: 150px; /* Set a max height for images to keep cards smaller */
+}
+
+.black-background-section .caption {
+  max-width: 40%; /* Control the width of the caption section */
+}
+.card-item {
+  border: none; /* Hide card borders */
+}
+
+.card {
+  border: none; /* Hide card borders */
+  box-shadow: none; /* Remove shadow */
+}
+
+.card-title {
+  text-align: center; /* Center card titles */
+}
+
+.black-background-section {
+  background-color: black; /* Set background color */
+  color: white; /* Set text color */
+  padding: 40px 0; /* Adjust padding */
+}
+
+.caption {
+  color: white; /* Caption text color */
+  margin-right: auto; /* Align caption to the left */
+}
+/* CSS for hover effect */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* darkblue Section*/
+.dark-blue-section {
+  background-color: #001f3f;
+  padding: 60px 0;
+}
+
+.dark-blue-section img {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.dark-blue-section h2,
+.dark-blue-section p {
+  color: #fff;
+  text-align: center;
+}
+
+.dark-blue-section .btn {
+  margin-top: 20px;
+}
+
+
+
+/* Footer Section*/
+.footer-section {
+  background-color: white;
+  padding: 40px 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer-title {
+  color: blue;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-hr {
+  margin: 10px 0;
+  border-color: #000;
+  border-width: 2px;
+}
+
+.footer-description {
+  margin-top: 10px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons .icon {
+  font-size: 24px;
+  color: #000;
+  margin-right: 15px;
+  transition: color 0.3s;
+}
+
+.social-icons .icon:hover {
+  color: #007bff;
+}
+
+.footer-column h5 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s;
+  font-family: Roboto Flex, Arial, Sans-Serif;
+}
+
+.footer-column ul li a:hover {
+  color: #007bff;
+}
+
+.subscribe-button {
+  margin-top: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.subscribe-button:hover {
+  background-color: #0056b3;
+}
+
+.footer-bottom-section {
+  background-color: white;
+  padding: 20px 0;
+  border-top: 1px solid #e5e5e5;
+  font-family: Roboto Flex, Arial, Sans-Serif;
+}
+
+.footer-bottom-hr {
+  margin: 20px 0;
+  border-color: #ccc;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-links li {
+  display: inline-block;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.footer-links li a:hover {
+  color: #007bff;
+}
+
+.feedback-button {
+  margin-top: 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 30px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.feedback-button:hover {
+  background-color: #0056b3;
+}
+

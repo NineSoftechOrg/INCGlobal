@@ -53,6 +53,26 @@
 .card-item a:hover {
   color: #007bff; /* Change color on hover */
 }
+/* Search Bar Styling */
+.search-bar-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar-container input {
+  width: 200px;
+  transition: width 0.4s ease;
+}
+
+@media (min-width: 768px) {
+  .search-bar-container input {
+    width: 300px;
+  }
+}
+
+
+
 
 /* Ensure text content section has proper margins and alignment */
 .text-content {
@@ -66,28 +86,78 @@
 
 /* Styling for the horizontal layout */
 /* Ensure full-width dropdown */
-.full-width-dropdown {
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
+/* Header.css */
+
+/* Full-width submenu styling */
+.full-width-submenu {
+  position: absolute; /* Position the submenu relative to the parent */
+  top: 4.3rem; /* Adjust based on your header height */
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure it appears above other content */
+  display: none; /* Initially hidden */
+  padding: 1rem; /* Add some padding */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
 }
 
-.full-width-submenu {
-  width: 100vw;
+/* Active submenu (when displayed) */
+.applications-submenu,
+.product-type-submenu,
+.features-technologies-submenu,
+.snapdragon-submenu {
   position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  border-top: 1px solid #ddd;
+  background-color: #f8f9fa; /* Light background */
+  width: 100vw; /* Full viewport width */
+  left: 0; /* Align with the left edge */
+  display: none; /* Initially hidden */
+  z-index: 10; /* Ensure it overlaps other content */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 0; /* Padding for top and bottom */
+}
+
+.applications-submenu.active,
+.product-type-submenu.active,
+.features-technologies-submenu.active,
+.snapdragon-submenu.active {
+  display: block; /* Show active submenu */
 }
 
 .applications-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  padding: 1rem;
+  display: flex;
+  justify-content: space-around; /* Space items evenly */
+  max-width: 1200px; /* Optional: max width for content */
+  margin: 0 auto; /* Center content */
+  padding: 20px; /* Padding for the grid */
 }
+
+.applications-grid > div {
+  flex: 1; /* Allow items to grow equally */
+  margin: 0 10px; /* Spacing between sections */
+}
+
+.applications-grid h5 {
+  margin-bottom: 10px; /* Space below section headings */
+}
+
+.applications-grid ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+}
+
+.applications-grid li {
+  margin: 5px 0; /* Space between list items */
+}
+
+.applications-grid a {
+  text-decoration: none; /* Remove underline */
+  color: #007bff; /* Link color */
+}
+
+.applications-grid a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+/* Developer submenu*/
+
 
 /* Vertical dividers for icons */
 .vertical-divider {
@@ -128,4 +198,3 @@
   height: 20px;
   background-color: #ccc;
 }
-

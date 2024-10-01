@@ -1,0 +1,43 @@
+
+/* src/styles.css or src/App.css */
+
+.contact-page {
+background-image: url(https://images.squarespace-cdn.com/content/v1/5f0cc373aa963a60fd856703/1594684619222-2YRHL7F30QZPGWKYM9QI/Contact+us+page.jpg);
+
+padding: 40px 0;
+
+}
+
+.contact-page h1 {
+
+font-size: 2.5rem;
+
+color: #333;
+
+text-align: left;
+
+}
+
+.contact-page .form-control {
+
+margin-bottom: 20px;
+
+}
+
+.contact-page button {
+
+background-color: #007bff; /* Bootstrap primary color */
+
+border: none;
+
+}
+
+/* Make sure the image scales well on smaller screens */
+
+.contact-page img {
+
+max-width: 100%;
+
+height: auto;
+
+}

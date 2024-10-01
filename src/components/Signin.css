@@ -1,0 +1,99 @@
+body {
+  background: linear-gradient(135deg, #a8c0ff, #3f2b96);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.auth-container {
+  background-image: url(https://img.freepik.com/free-vector/gradient-connection-background_52683-116652.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-card {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+.auth-card h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.toggle-buttons button {
+  border: 1px solid #ddd;
+  background-color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.toggle-buttons .active {
+  background-color: #1565C0;
+  color: white;
+}
+
+.toggle-buttons button:not(.active):hover {
+  background-color: #f0f0f0;
+}
+
+.auth-form .input-group {
+  margin-bottom: 15px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1565C0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #003c8f;
+}
+
+.forgot-password, .signup-prompt, .login-prompt {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.forgot-password a,
+.signup-prompt a,
+.login-prompt a {
+  color: #1565C0;
+  text-decoration: none;
+}
+
+.forgot-password a:hover,
+.signup-prompt a:hover,
+.login-prompt a:hover {
+  text-decoration: underline;
+}
