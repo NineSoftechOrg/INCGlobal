@@ -30,8 +30,7 @@ const Footer = () => {
             <Row>
               <Col md={4} className="footer-column mb-4">
                 <h5>Quick Links</h5>
-                <ul>
-                  <li><a href="#">Services</a></li>
+                <ul> 
                   <li><Link to="/">Home</Link></li> {/* Link to Home */}
                   <li><Link to="/contact">Contact Us</Link></li> {/* Link to Contact Us */}
                 </ul>

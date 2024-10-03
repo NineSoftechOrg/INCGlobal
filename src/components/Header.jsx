@@ -3,6 +3,8 @@ import { Navbar, Nav, NavDropdown ,Dropdown } from "react-bootstrap";
 import { FaSearch, FaUser, FaHome } from 'react-icons/fa';
 import './Header.css'; // Custom CSS for styling
 import { Link ,useLocation} from 'react-router-dom';
+import image from '../assets/image.png';
+
 
 
 const Header = () => {
@@ -54,7 +56,16 @@ const Header = () => {
       ></div>
       <Navbar bg="white" variant="light" expand="lg" className="fixed-top header" style={{ minHeight: '4.3rem' }}>
         <div className="container-fluid" style={{ paddingLeft: '130px', paddingRight: '48px', justifyContent: 'space-between', display: 'flex' }}>
-          <Navbar.Brand href="#" style={{ color: '#3153dc', fontWeight: 'bold' }}>INC Global</Navbar.Brand>
+        <Navbar.Brand href="#" style={{ color: '#3153dc', fontWeight: 'bold' }}>
+        <img
+          src={image}  // Use the imported image (or "/logo.png" for public folder)
+          alt="INC Global Logo"
+          width="100"
+          height="40"
+          className="d-inline-block align-top"
+          style={{ marginRight: '41px' }}
+        />
+      </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
