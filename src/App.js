@@ -6,7 +6,8 @@ import Footer from './components/Footer';
 import Contact from './components/Contact'; // Import your Contact component
 import Home from './Home'; // Import your Home component
 import Signin from './components/Signin';
-import Solutions from './components/Solutions';
+import Company from './components/Company';
+import Services from './components/Services';
 
 const App = () => {
   return (
@@ -17,8 +18,8 @@ const App = () => {
         <Route path="/" element={<Home />} /> {/* Your Home component */}
         <Route path="/contact" element={<Contact />} /> {/* Separate Contact page */}
         <Route path="/Signin" element={<Signin />} /> {/* Separate Contact page */}
-        <Route path="/Solutions" element={<Solutions />} /> {/* Separate Contact page */}
-        
+        <Route path="/Company" element={<Company />} /> {/* Separate Contact page */}
+        <Route path="/Services" element={<Services />} /> {/* Separate Contact page */}
         </Routes>
       {/* <Footer /> */}
     </Router>

@@ -1,7 +1,8 @@
 import React from 'react';
-import './Solutions.css'; // Custom CSS for this page
+import './Company.css'; // Custom CSS for this page
+import ChatBot from './ChatBot';
 
-const Solutions = () => {
+const Company = () => {
   return (
     <div>
       <div className="hero-section d-flex align-items-center">
@@ -102,8 +103,81 @@ const Solutions = () => {
           </div>
         </div>
       </div>
+   {/* Blog Section */}
+   <div className="blog-section" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")', backgroundSize: 'cover' }}>
+        <div className="container">
+          <h2 className="blog-heading text-center">Latest Blogs</h2>
+          <div className="row">
+            {/* Blog 1 */}
+            <div className="col-md-4">
+              <div className="blog-card">
+                <div className="blog-card-inner">
+                  <div className="blog-card-front">
+                    <img
+                      src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=4000&auto=format&fit=crop"
+                      alt="AI Transforming Industries"
+                      className="blog-image img-fluid"
+                    />
+                    <h5 className="blog-title">AI Transforming Industries</h5>
+                  </div>
+                  <div className="blog-card-back">
+                    <p className="blog-content">
+                      "AI is transforming industries and driving innovations worldwide."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Blog 2 */}
+            <div className="col-md-4">
+              <div className="blog-card">
+                <div className="blog-card-inner">
+                  <div className="blog-card-front">
+                    <img
+                      src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=4000&auto=format&fit=crop"
+                      alt="AI in Healthcare"
+                      className="blog-image img-fluid"
+                    />
+                    <h5 className="blog-title">AI in Healthcare</h5>
+                  </div>
+                  <div className="blog-card-back">
+                    <p className="blog-content">
+                      "AI is revolutionizing healthcare, enabling more accurate diagnostics and personalized treatments."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Blog 3 */}
+            <div className="col-md-4">
+              <div className="blog-card">
+                <div className="blog-card-inner">
+                  <div className="blog-card-front">
+                    <img
+                      src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=4000&auto=format&fit=crop"
+                      alt="AI in Education"
+                      className="blog-image img-fluid"
+                    />
+                    <h5 className="blog-title">AI in Education</h5>
+                  </div>
+                  <div className="blog-card-back">
+                    <p className="blog-content">
+                      "Discover how AI is transforming education, making learning more engaging and personalized."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    {/* ChatBot section */}
+    <ChatBot />
     </div>
   );
 };
 
-export default Solutions;
+export default Company;

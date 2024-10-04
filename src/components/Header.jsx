@@ -6,7 +6,6 @@ import { Link ,useLocation} from 'react-router-dom';
 import image from '../assets/image.png';
 
 
-
 const Header = () => {
   const [activeSubMenu, setActiveSubMenu] = useState(null);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -95,24 +94,27 @@ const Header = () => {
               {/* Developer Dropdown */}
               <NavDropdown title="Solutions" id="Solutions-dropdown">
               <Link to="/Solutions" className="ms-3"> {/* Use Link component to navigate to Solutions Page */}
-              <NavDropdown.Item href="#Solutions">Testimonials</NavDropdown.Item>
-                <NavDropdown.Item href="#Solutions">Goals</NavDropdown.Item>
-                <NavDropdown.Item href="#Solutions">Mission and Vision</NavDropdown.Item>
+              <NavDropdown.Item href="#Solutions">Products</NavDropdown.Item>
+                <NavDropdown.Item href="#Solutions">Features and Technologies</NavDropdown.Item>
               </Link>
               </NavDropdown>
 
-              {/* Support Dropdown */}
+              {/* Services Dropdown */}
               <NavDropdown title="Services" id="support-dropdown">
+              <Link to="/Services" className="ms-3"> {/* Use Link component to navigate to Services page */}
                 <NavDropdown.Item href="#Services">Automation</NavDropdown.Item>
                 <NavDropdown.Item href="#Services">Artificial Inetelligence</NavDropdown.Item>
+                </Link>
               </NavDropdown>
 
               {/* Company Dropdown */}
               <NavDropdown title="Company" id="company-dropdown">
-                <NavDropdown.Item href="#About">About</NavDropdown.Item>
-                <NavDropdown.Item href="#Blogs">Blogs</NavDropdown.Item>
-                <Link to="/Solutions" className="ms-3"> {/* Use Link component to navigate to Solutions page */}
-                <NavDropdown.Item href="#Solutions">Clients</NavDropdown.Item></Link>
+              <Link to="/Company" className="ms-3"> {/* Use Link component to navigate to Company page */}
+                <NavDropdown.Item href="#Company">About</NavDropdown.Item>
+                <NavDropdown.Item href="#Company">Testimonials</NavDropdown.Item>
+                <NavDropdown.Item href="#Company">Clients</NavDropdown.Item>
+                <NavDropdown.Item href="#Company">Blogs</NavDropdown.Item>
+               </Link>
               </NavDropdown>
             </Nav>
 
