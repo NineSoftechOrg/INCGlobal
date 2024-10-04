@@ -1,0 +1,130 @@
+.hero-section {
+    background-image: url(https://img.freepik.com/free-vector/speed-motion-lines-curvy-style_1017-37409.jpg?size=626&ext=jpg&ga=GA1.1.2021888660.1726555282&semt=ais_hybrid);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+  
+  .main-description {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .get-started-button {
+    background-color: #ff6b6b;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+  }
+  
+  .get-started-button:hover {
+    background-color: #ff4b4b;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  .hero-section {
+    background-color: #343a40; /* Dark background for the hero section */
+    padding: 60px 0;
+}
+
+.section-title {
+    margin: 40px 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff; /* Bootstrap primary color */
+}
+
+/* Solutions.css */
+
+/* Hero Section Styles */
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+}
+
+/* Testimonials Section Styles */
+.testimonials-section {
+  background-color: #f8f9fa; /* Light background for contrast */
+  padding: 40px 0;
+}
+
+.testimonials-heading {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+.testimonial-card {
+  background-color: white; /* White background for cards */
+  border: 1px solid #dee2e6; /* Border around cards */
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px; /* Spacing between cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.testimonial-image {
+  width: 80px; /* Adjust size as needed */
+  height: 80px; /* Adjust size as needed */
+  border-radius: 50%; /* Circular image */
+  margin-bottom: 15px;
+}
+
+.testimonial-text {
+  font-style: italic; /* Italics for testimonial text */
+}
+
+.testimonial-author {
+  font-weight: bold; /* Bold for the author's name */
+}
+
+.testimonial-role {
+  color: #6c757d; /* Muted color for role */
+}
+
+.partners-section {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+}
+
+.partners-heading {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.partners-logos {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.logos-scroll {
+  display: flex;
+  align-items: center;
+  animation: scroll-logos 15s linear infinite;
+}
+
+.partner-logo {
+  height: 100px;
+  margin: 0 30px; /* Adds space between logos */
+  object-fit: contain;
+}
+
+@keyframes scroll-logos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

@@ -93,21 +93,26 @@ const Header = () => {
               </NavDropdown>
 
               {/* Developer Dropdown */}
-              <NavDropdown title="Developer" id="developer-dropdown">
-                <NavDropdown.Item href="#support1">Contact Us</NavDropdown.Item>
-                <NavDropdown.Item href="support2">FAQs</NavDropdown.Item>
+              <NavDropdown title="Solutions" id="Solutions-dropdown">
+              <Link to="/Solutions" className="ms-3"> {/* Use Link component to navigate to Solutions Page */}
+              <NavDropdown.Item href="#Solutions">Testimonials</NavDropdown.Item>
+                <NavDropdown.Item href="#Solutions">Goals</NavDropdown.Item>
+                <NavDropdown.Item href="#Solutions">Mission and Vision</NavDropdown.Item>
+              </Link>
               </NavDropdown>
 
               {/* Support Dropdown */}
-              <NavDropdown title="Support" id="support-dropdown">
-                <NavDropdown.Item href="#support1">Contact Us</NavDropdown.Item>
-                <NavDropdown.Item href="support2">FAQs</NavDropdown.Item>
+              <NavDropdown title="Services" id="support-dropdown">
+                <NavDropdown.Item href="#Services">Automation</NavDropdown.Item>
+                <NavDropdown.Item href="#Services">Artificial Inetelligence</NavDropdown.Item>
               </NavDropdown>
 
               {/* Company Dropdown */}
               <NavDropdown title="Company" id="company-dropdown">
-                <NavDropdown.Item href="#support1">Contact Us</NavDropdown.Item>
-                <NavDropdown.Item href="support2">FAQs</NavDropdown.Item>
+                <NavDropdown.Item href="#About">About</NavDropdown.Item>
+                <NavDropdown.Item href="#Blogs">Blogs</NavDropdown.Item>
+                <Link to="/Solutions" className="ms-3"> {/* Use Link component to navigate to Solutions page */}
+                <NavDropdown.Item href="#Solutions">Clients</NavDropdown.Item></Link>
               </NavDropdown>
             </Nav>
 
@@ -152,8 +157,9 @@ const Header = () => {
             </Nav>
           </Navbar.Collapse>
 
-          {/* Sub-options for Applications */}
-          <div className={`applications-submenu full-width-submenu bg-light p-3 ${activeSubMenu === 'applications' ? 'active' : ''}`}>
+         
+{/* Sub-options for Applications */}
+<div className={`applications-submenu full-width-submenu bg-light p-3 ${activeSubMenu === 'applications' ? 'active' : ''}`}>
             <h4 className="text-dark">Applications</h4>
             <div className="applications-grid">
               {/* Mobile Section */}
@@ -317,6 +323,7 @@ const Header = () => {
               </div>
             </div>
           </div>
+         
            
           
         </div>

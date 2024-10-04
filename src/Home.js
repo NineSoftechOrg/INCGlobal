@@ -2,6 +2,7 @@
 import React from 'react';
 import { Container, Row, Col, Button,Card } from 'react-bootstrap'; // Assuming you're using React-Bootstrap
 import './App.css'; // Import custom CSS for styling
+
 const Home = () => {
   return (
     <div className="Home">
@@ -28,6 +29,7 @@ const Home = () => {
       </p>
     </div>
   </Container>
+  
 </div>
 
   
