@@ -91,10 +91,10 @@ const Header = () => {
                 </div>
               </NavDropdown>
 
-              {/* Developer Dropdown */}
+              {/* Solutions Dropdown */}
               <NavDropdown title="Solutions" id="Solutions-dropdown">
               <Link to="/Solutions" className="ms-3"> {/* Use Link component to navigate to Solutions Page */}
-              <NavDropdown.Item href="#Solutions">Products</NavDropdown.Item>
+              <NavDropdown.Item href="#Solutions">Applications</NavDropdown.Item>
                 <NavDropdown.Item href="#Solutions">Features and Technologies</NavDropdown.Item>
               </Link>
               </NavDropdown>
