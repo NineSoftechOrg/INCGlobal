@@ -1,11 +1,11 @@
 
-
 /* Full Page Background Image Section */
+
 .App {
   font-family: 'Roboto Flex', sans-serif;
 }
 .bg-full-page {
-  background-image: url('https://advertisingweek.com/wp-content/uploads/2022/07/169automation.jpg'); /* Replace with your image URL */
+  background-image: url('https://files.oaiusercontent.com/file-RaX5NQkGw95kKY7k5C8VaaAA?se=2024-10-07T03%3A38%3A03Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D978b7460-329d-4aef-8edb-618767b1a7a5.webp&sig=hGJMJM2EWJbUvIC%2BGM79zVS9JHTMa4gwnOp3l2GvHKo%3D'); /* Replace with your image URL */
   background-size: cover;
   background-position: center;
   min-height: 100vh; /* Full page height */
@@ -16,6 +16,7 @@
   color: white;
   flex-direction: column;
 }
+
 
 .caption-container {
   text-align: left;
@@ -39,7 +40,6 @@
   text-align: left;
   
 }
-
 .rte-heading-xxxl {
   font-size: 3rem; /* Adjust as needed */
   line-height: 1.4;
@@ -61,7 +61,26 @@
   max-height: 350px; /* Set a maximum height */
   object-fit: cover; /* Crop image to fit */
 }
+.home {
+  background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-blue-tech-artificial-intelligence-poster-background-intelligencelight-effecttextureposterbackground-image_68116.jpg);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
 
+.caption-container {
+  padding: 20px; /* Adjust padding as needed */
+  color: white; /* Change text color if necessary */
+  position: absolute; /* Position the caption absolutely */
+  top: 400px; /* Position from the top */
+  left: 220px; /* Position from the left */
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  height: 100%; /* Ensure the image takes full height */
+}
 /* Scrollable Cards Section */
 .scrollable-cards-section {
   background-color: white;
@@ -179,7 +198,112 @@
   margin-top: 20px;
 }
 
+/* Why Choose Us Section */
+.why-choose-us {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #f9f9f9;
+  
+}
 
+.why-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #ff7f00;
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+  margin-bottom: 30px;
+}
+
+.feature-box:hover {
+  transform: translateY(-10px);
+}
+
+.feature-box .icon {
+  font-size: 3rem;
+  color: #ff7f00;
+  margin-bottom: 20px;
+}
+
+.feature-box h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.feature-box p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .why-choose-us .feature-box {
+    margin-bottom: 40px;
+  }
+}
+
+/* News Letter Section*/
+/* Styling for the newsletter section */
+/* Styling for the newsletter section */
+.newsletter-section {
+  background-image: url(https://img.freepik.com/free-vector/copy-space-blue-circuits-digital-background_23-2148821699.jpg?size=626&ext=jpg&ga=GA1.1.1819120589.1728172800&semt=ais_hybrid);
+  padding: 50px 0;
+
+}
+
+.newsletter-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.newsletter-description {
+  margin-bottom: 20px;
+}
+
+/* Newsletter Box Styling */
+.newsletter-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e5e5;
+}
+
+.newsletter-form {
+  max-width: 400px;
+}
+
+.newsletter-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .newsletter-section .row {
+    flex-direction: column-reverse;
+  }
+
+  .newsletter-image {
+    margin-bottom: 20px;
+  }
+}
 
 /* Footer Section*/
 .footer-section {
@@ -308,4 +432,3 @@
 .feedback-button:hover {
   background-color: #0056b3;
 }
-

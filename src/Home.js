@@ -2,68 +2,33 @@
 import React from 'react';
 import { Container, Row, Col, Button,Card } from 'react-bootstrap'; // Assuming you're using React-Bootstrap
 import './App.css'; // Import custom CSS for styling
+import ChatBot from './components/ChatBot'
+import AOS from 'aos';
+import InsightsAndCaseStudies from './components/InsightsAndCaseStudies';
+
 
 const Home = () => {
   return (
-    <div className="Home">
-        {/* Full Page Background Image Section */}
-      <div className="bg-full-page">
-      <div className="caption-container py-4">
-  <Container>
-    <div id="richTextContainer" className="text-start">
-      <p className="mb-0">
-        <span className="rte-heading-xxxl rte-v2-style d-block">
-          <span className="d-block d-md-none" style={{ fontSize: '24px', lineHeight: '32px' }}>
-          Driving Global Solutions, <br />
-          One Innovation at a Time.
-          </span>
-          <span className="d-none d-md-block d-lg-none" style={{ fontSize: '36px', lineHeight: '44px' }}>
-          Driving Global Solutions, <br />
-          One Innovation at a Time.
-          </span>
-          <span className="d-none d-lg-block" style={{ fontSize: '48px', lineHeight: '56px' }}>
-          Driving Global Solutions, <br />
-          One Innovation at a Time.
-          </span>
-        </span>
-      </p>
-    </div>
-  </Container>
-  
-</div>
-
-  
-  <div className="carousel-container">
-    <Container>
-      <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
-        <div className="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img src="https://m.economictimes.com/thumb/msid-107857198,width-1600,height-900,resizemode-4,imgsize-58444/generative-ai.jpg" className="d-block w-100" alt="ai"/>
+    <div className="home">
+    <Container fluid>
+      <Row className="align-items-center" style={{ height: '100vh' }}>
+        <Col md={6} className="text-left">
+          <div className="caption-container">
+            <h1 className="display-4">Welcome to INC Global</h1>
+            <h3>Lead the Change: Experience the Future with INC Global.</h3>
+            <Button variant="primary" className="mt-3">Read More</Button>
           </div>
-          <div className="carousel-item">
-            <img src="https://plus.unsplash.com/premium_photo-1682124651258-410b25fa9dc0?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZXxlbnwwfHwwfHx8MA%3D%3D" className="d-block w-100" alt="ml"/>
-          </div>
-          <div className="carousel-item">
-            <img src="https://etimg.etb2bimg.com/photo/90696798.cms" className="d-block w-100" alt="automation"/>
-          </div>
-        </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div>
+        </Col>
+        <Col md={6} className="image-container">
+          <img 
+            src="https://example.com/your-image.jpg"  // Replace with your actual image URL
+            alt="AI Solutions"
+            className="img-fluid" 
+            style={{ height: '100%', width: '100%', objectFit: 'cover' }}
+          />
+        </Col>
+      </Row>
     </Container>
-  </div>
-</div>
 
 
       {/* Horizontal Scrollable Cards Section */}
@@ -115,71 +80,80 @@ const Home = () => {
           </div>
         </Container>
       </div>
+     
 {/* black background section */}
-      <div className="black-background-section">
-  <Container fluid className="d-flex justify-content-between align-items-center py-5">
-    <div className="caption" style={{ marginTop: '-20px' }}>
-      <h2>Discover Our Innovations</h2>
-      <h2>Be part of our mission to transform the future of technology.</h2>
-      <button className="btn btn-light">Learn More</button>
-    </div>
-
-    <Row className="g-4">
-      <Col sm={6}>
-        <Card className="card-hover">
-          <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg" alt="Software" />
-          <Card.Body>
-            <Card.Title>Software</Card.Title>
-          </Card.Body>
-        </Card>
-      </Col>
-      <Col md={6}>
-        <Card className="card-hover">
-          <Card.Img variant="top" src="https://img.freepik.com/free-photo/3d-rendering-futuristic-computer_23-2151004383.jpg?size=626&ext=jpg&ga=GA1.1.2113030492.1720396800&semt=ais_user" alt="Hardware" />
-          <Card.Body>
-            <Card.Title>Hardware</Card.Title>
-          </Card.Body>
-        </Card>
-      </Col> 
-      <Col md={6}>
-        <Card className="card-hover">
-          <Card.Img variant="top" src="https://img.freepik.com/premium-photo/education-distance-learning-e-learning-online-learning-are-all-types-personal-development_27634-789.jpg" alt="Learning" />
-          <Card.Body>
-            <Card.Title>Learning</Card.Title>
-          </Card.Body>
-        </Card>
-      </Col>
-      <Col md={6}>
-        <Card className="card-hover">
-          <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2016/11/23/14/45/coding-1853305_640.jpg" alt="Developer Blog" />
-          <Card.Body>
-            <Card.Title>Developer Blog</Card.Title>
-          </Card.Body>
-        </Card>
-      </Col>
-    </Row>
-  </Container>
-</div>
+     {/* Why Choose Us Section */}
+     <div className="why-choose-us">
+        <h2 className="why-title" data-aos="fade-up">Why Choose Us?</h2>
+        <div className="features-container row">
+          <div className="col-md-3 feature-box" data-aos="fade-up" data-aos-delay="200">
+            <div className="icon">
+              <i className="fas fa-hand-holding-heart"></i>
+            </div>
+            <h4>Locally Owned and Operated</h4>
+            <p>A fixture in our community, dedicated to serving our neighbors since 2013.</p>
+          </div>
+          <div className="col-md-3 feature-box" data-aos="fade-up" data-aos-delay="400">
+            <div className="icon">
+              <i className="fas fa-heart"></i>
+            </div>
+            <h4>Innovative Solutions</h4>
+            <p>Get the best equipment to meet your family’s needs and comfort demands.</p>
+          </div>
+          <div className="col-md-3 feature-box" data-aos="fade-up" data-aos-delay="600">
+            <div className="icon">
+              <i className="fas fa-shipping-fast"></i>
+            </div>
+            <h4>Satisfaction Guarantee</h4>
+            <p>Our job isn’t complete until you are fully satisfied with our work, guaranteed.</p>
+          </div>
+          <div className="col-md-3 feature-box" data-aos="fade-up" data-aos-delay="800">
+            <div className="icon">
+              <i className="fas fa-award"></i>
+            </div>
+            <h4>Award-Winning Service</h4>
+            <p>Our highly skilled technicians deliver award-winning service on all jobs, big and small.</p>
+          </div>
+        </div>
+      </div>
+{/* Insights and Casestudies */}
+<InsightsAndCaseStudies />
 {/* Dark Blue Section */}
-<div className="dark-blue-section" style={{ backgroundColor: '#001f3f', padding: '60px 0' }}>
-  <Container fluid className="d-flex justify-content-between align-items-center">
-    <Row className="align-items-center">
-      <Col md={6} className="d-flex justify-content-center">
-        <img 
-          src="https://s7d1.scene7.com/is/image/dmqualcommprod/EmailCollage?$QC_Responsive$&fmt=png-alpha" 
-          alt="Snapdragon Insider" 
-          style={{ width: '50%', height: 'auto' }} 
-        />
-      </Col>
-      <Col md={6} style={{ color: '#fff', textAlign: 'center' }}>
-        <h2>Become a Snapdragon Insider</h2>
-        <p>Are you a passionate creator, tech aficionado, or gamer extraordinaire? You’ve come to the right place. Connect with a global community and get access to news, giveaways, and events.</p>
-        <button className="btn btn-light">Sign Up</button>
-      </Col>
-    </Row>
-  </Container>
-</div>
-
+{/* Newsletter Section */}
+{/* Newsletter Section */}
+<div className="newsletter-section">
+        <div className="row align-items-center">
+          {/* Left Side - Image */}
+          <div className="col-md-6">
+            <img
+              src="https://cdni.iconscout.com/illustration/premium/thumb/newsletter-illustration-download-in-svg-png-gif-file-formats--email-marketing-promotional-mail-advertising-business-pack-people-illustrations-3414911.png?f=webp"
+              alt="Newsletter Image"
+              className="newsletter-image"
+            />
+          </div>
+          {/* Right Side - Box with Form */}
+          <div className="col-md-6">
+            <div className="newsletter-box">
+              <h3 className="newsletter-title">Subscribe to Our Newsletter</h3>
+              <p className="newsletter-description">
+                Stay updated with the latest news and innovations from INC Global.
+              </p>
+              <form className="newsletter-form">
+                <div className="mb-3">
+                  <input type="text" className="form-control" placeholder="Your Name" />
+                </div>
+                <div className="mb-3">
+                  <input type="email" className="form-control" placeholder="Your Email" />
+                </div>
+                <button className="btn btn-primary">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+{/* ChatBot section */}
+<ChatBot />
+    
     </div>
   );
 };

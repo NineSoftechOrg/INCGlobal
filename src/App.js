@@ -23,7 +23,7 @@ const App = () => {
         <Route path="/Services" element={<Services />} /> {/* Separate Contact page */}
         <Route path="/Solutions" element={<Solutions />} /> {/* Separate Contact page */}
         </Routes>
-      {/* <Footer /> */}
+         < Footer /> 
     </Router>
     </div>
   );

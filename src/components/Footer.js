@@ -1,12 +1,12 @@
 // src/components/Footer.js
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap'; // Adjust imports based on your footer code
-import { FaInstagram, FaFacebook, FaLinkedin } from 'react-icons/fa'; // Assuming you use these icons
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Container, Row, Col } from 'react-bootstrap'; 
+import { FaInstagram, FaFacebook, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa'; // Import icons
+import { Link } from 'react-router-dom'; 
 
 const Footer = () => {
   return (
-    <footer className="footer-section">
+    <footer className="footer-section" >
       <Container>
         <Row className="align-items-start py-5">
           <Col md={6} className="mb-4">
@@ -20,10 +20,16 @@ const Footer = () => {
               <a href="#"><FaFacebook className="icon" /></a>
               <a href="#"><FaLinkedin className="icon" /></a>
             </div>
-            {/* Adding Email and Phone Information */}
+            {/* Adding Email and Phone Information with Icons */}
             <div className="contact-info mt-3">
-              <p>Email: <a href="mailto:info@incglobal.pro">info@incglobal.pro</a></p>
-              <p>Phone: <a href="tel:+916363617779">+91 6363617779</a></p>
+              <p>
+                <FaEnvelope className="contact-icon" /> 
+                Email: <a href="mailto:info@incglobal.pro">info@incglobal.pro</a>
+              </p>
+              <p>
+                <FaPhone className="contact-icon" /> 
+                Phone: <a href="tel:+916363617779">+91 6363617779</a>
+              </p>
             </div>
           </Col>
           <Col md={6}>
@@ -31,8 +37,8 @@ const Footer = () => {
               <Col md={4} className="footer-column mb-4">
                 <h5>Quick Links</h5>
                 <ul> 
-                  <li><Link to="/">Home</Link></li> {/* Link to Home */}
-                  <li><Link to="/contact">Contact Us</Link></li> {/* Link to Contact Us */}
+                  <li><Link to="/">Home</Link></li>
+                  <li><Link to="/contact">Contact Us</Link></li>
                 </ul>
               </Col>
               <Col md={4} className="footer-column mb-4">
@@ -53,26 +59,7 @@ const Footer = () => {
         </Row>
       </Container>
 
-      {/* Horizontal Line Section with Links */}
-      <div className="footer-bottom-section">
-        <Container>
-          <hr className="footer-bottom-hr" />
-          <Row className="align-items-start py-3">
-            <Col md={6}>
-              <ul className="footer-links">
-                <li><a href="#">Terms of Use</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Cookie Policy</a></li>
-                <li><a href="#">Accessibility Statement</a></li>
-                <li><a href="#">Cookie Settings</a></li>
-              </ul>
-            </Col>
-            <Col md={6} className="text-md-end">
-              <p>Language: English (US)</p>
-            </Col>
-          </Row>
-        </Container>
-      </div>
+      
     </footer>
   );
 };

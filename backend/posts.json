@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "AI Transforming Industries",
+        "content": "AI is transforming industries and driving innovations worldwide.",
+        "imageUrl": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=4000&auto=format&fit=crop"
+    },
+    {
+        "id": 2,
+        "title": "AI in Healthcare",
+        "content": "AI is revolutionizing healthcare, enabling more accurate diagnostics and personalized treatments.",
+        "imageUrl": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=4000&auto=format&fit=crop"
+    },
+    {
+        "id": 3,
+        "title": "AI in Education",
+        "content": "Discover how AI is transforming education, making learning more engaging and personalized.",
+        "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=4000&auto=format&fit=crop"
+    }
+]
