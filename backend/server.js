@@ -63,19 +63,67 @@ app.get('/add-blog', (req, res) => {
         <html>
             <head>
                 <title>Add Blog Post</title>
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        background-color: #f4f4f4;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                        margin: 0;
+                    }
+                    .form-container {
+                        background-color: #fff;
+                        padding: 20px;
+                        border-radius: 8px;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                        width: 400px;
+                    }
+                    h1 {
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+                    input, textarea {
+                        width: 100%;
+                        padding: 10px;
+                        margin: 10px 0;
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        box-sizing: border-box;
+                    }
+                    textarea {
+                        height: 150px;
+                    }
+                    button {
+                        background-color: #28a745;
+                        color: white;
+                        padding: 10px;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        width: 100%;
+                    }
+                    button:hover {
+                        background-color: #218838;
+                    }
+                </style>
             </head>
             <body>
-                <h1>Add New Blog Post</h1>
-                <form action="/api/posts" method="POST">
-                    <input type="text" name="title" placeholder="Blog Title" required />
-                    <textarea name="content" placeholder="Blog Content" required></textarea>
-                    <input type="url" name="imageUrl" placeholder="Image URL" required />
-                    <button type="submit">Add Blog Post</button>
-                </form>
+                <div class="form-container">
+                    <h1>Add New Blog Post</h1>
+                    <form action="/api/posts" method="POST">
+                        <input type="text" name="title" placeholder="Blog Title" required />
+                        <textarea name="content" placeholder="Blog Content" required></textarea>
+                        <input type="url" name="imageUrl" placeholder="Image URL" required />
+                        <button type="submit">Add Blog Post</button>
+                    </form>
+                </div>
             </body>
         </html>
     `);
 });
+
 
 // Start server
 app.listen(PORT, () => {
